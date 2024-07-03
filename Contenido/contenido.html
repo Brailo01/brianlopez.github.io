@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido - La esquina del Age</title>
+    <link rel="stylesheet" href="./contenido.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <div>
+        <header>
+            <h1><b>Contenido</b></h1>
+            <img class="logo" src="../img/mangudai.webp" alt="Logo">
+            <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+            <nav class="nav" id="nav">
+                <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+                <ul class="nav-list">
+                    <li><a href="http://127.0.0.1:3000/Trabajo integrador/index.html"><b>Inicio</b></a></li>
+                    <li><a href="http://127.0.0.1:3000/Trabajo integrador/Contenido/contenido.html"><b>Contenido</b></a></li>
+                    <li><a href="http://127.0.0.1:3000/Trabajo integrador/Compras/tienda.html"><b>Tienda</b></a></li>
+                    <li><a href="http://127.0.0.1:3000/Trabajo integrador/Usuario/usuario.html"><b>Usuario</b></a></li>
+                    <li><a href="http://127.0.0.1:3000/Trabajo integrador/Contacto/contacto.html"><b>Contacto</b></a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <main>
+
+        <div class="cartas-civis">
+
+            <div class="titulo">
+                <h2>Civilizaciones</h2>
+                <p>Estas son solo algunas de las civilizaciones</p>
+
+                <section class="estructura-cartas">
+
+
+                    <div class="carta">
+                        <figura>
+                            <img src="../img/celta civi.jpg">
+                        </figura>
+                        <div class="contenido-carta">
+                            <h3>Celtas</h3>
+                            <p>Civilización de infantería y asedio</p>
+                            <ul>
+                                <li>La infantería es un 15% más rápida (a partir de la Edad Feudal)</li>
+                                <li>Los leñadores trabajan un 15% más rápido</li>
+                                <li>Las armas de asedio disparan un 25% más rápido</li>
+                                <li>Se pueden robar ovejas, y las ovejas en LDV de una unidad celta no se pueden robar</li>
+                            </ul>
+                            <button class="musica" onmousedown="togglePlayPause('sonido1')"><i class="bi bi-music-note-beamed"></i></button>
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="carta">
+                        <figura>
+                            <img src="../img/teuton civi.jpg">
+                        </figura>
+                        <div class="contenido-carta">
+                            <h3>Teutones</h3>
+                            <p>Civilización de infantería</p>
+                            <ul>
+                                <li>Monjes: alcance de curación doble</li>
+                                <li>Torres acuartelan el doble de unidades</li>
+                                <li>Matacanes y hierbas medicinales gratis</li>
+                                <li>Granjas cuestan un 40% menos</li>
+                                <li>Centro urbano acuartelado +10</li>
+                                <li>Unidades del cuartel y de los establos: +1 de armadura en Ed. de los Castillos y Ed. Imperial</li>
+                            </ul>
+                            <button class="musica" onmousedown="togglePlayPause('sonido2')"><i class="bi bi-music-note-beamed"></i></button>
+                        </div>
+                    </div>
+
+
+                    <div class="carta">
+                        <figura>
+                            <img src="../img/mongol civi.jpg">
+                        </figura>
+                        <div class="contenido-carta">
+                            <h3>Mongoles</h3>
+                            <p>Civilización de arqueros a caballo</p>
+                            <ul>
+                                <li>Los arqueros a caballo disparan un 25% más rápido</li>
+                                <li>Línea de exploradores y lanceros esteparios +20% PR en la Edad de los Castillos, +30% en la Edad Imperial</li>
+                                <li>Los cazadores trabajan un 40% más rápido</li>
+                            </ul>
+                            <button class="musica" onmousedown="togglePlayPause('sonido3')"><i class="bi bi-music-note-beamed"></i></button>
+                        </div>
+                    </div>
+
+
+                    <div class="carta">
+                        <figura>
+                            <img src="../img/sarra civi.jpg">
+                        </figura>
+                        <div class="contenido-carta">
+                            <h3>Sarracenos</h3>
+                            <p>Civilización naval y de camellos</p>
+                            <ul>
+                                <li>Comercio en mercado: cuesta solo un 5%</li>
+                                <li>Mercados: cuestan 100 menos de madera</li>
+                                <li>Barcos de transporte: el doble de puntos de resistencia,
+                                    el doble de capacidad de carga</li>
+                                <li>Galeras: atacan un 25% más rápido</li>
+                                <li>Unidades de camello: +25% puntos de resistencia</li>
+                            </ul>
+                            <button class="musica" onmousedown="togglePlayPause('sonido4')"><i class="bi bi-music-note-beamed"></i></button>
+                        </div>
+                    </div>
+
+
+                    <div class="carta">
+                        <figura>
+                            <img src="../img/turcos civi.jpg">
+                        </figura>
+                        <div class="contenido-carta">
+                            <h3>Turcos</h3>
+                            <p>Civilización de pólvora</p>
+                            <ul>
+                                <li>Unidades de pólvora +25% de puntos de resistencia; desarrollar tecnologías de pólvora cuesta un 50 % menos; Química gratis</li>
+                                <li>Mineros de oro trabajan un 20% más rápido</li>
+                                <li>Caballería de exploración, caballería ligera y húsar obtienen +1P de armadura</li>
+                                <li>Mejoras de caballería ligera y húsar gratis</li>
+                            </ul>
+                            <button onmousedown="togglePlayPause('sonido5')"><i class="bi bi-music-note-beamed"></i></button>
+                        </div>
+                    </div>
+
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="../js/main.js"></script>   
+</body>
+
+<footer>
+    <p>© 2024 - Trabajo final Programación Web I</p>
+</footer>
+
+</html>

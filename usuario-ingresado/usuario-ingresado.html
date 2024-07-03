@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usuario-ingresado</title>
+    <link rel="stylesheet" href="./usuario-ingresado.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<body>
+
+
+
+    <header>
+        <h1><b>Usuario</b></h1>
+        <img class="logo" src="../img/mangudai.webp" alt="Logo">
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="http://127.0.0.1:3000/Trabajo integrador/index.html"><b>Inicio</b></a></li>
+                <li><a href="http://127.0.0.1:3000/Trabajo integrador/Contenido/contenido.html"><b>Contenido</b></a></li>
+                <li><a href="http://127.0.0.1:3000/Trabajo integrador/Compras/tienda.html"><b>Tienda</b></a></li>
+                <li><a href="http://127.0.0.1:3000/Trabajo integrador/Usuario/usuario.html"><b>Usuario</b></a></li>
+                <li><a href="http://127.0.0.1:3000/Trabajo integrador/Contacto/contacto.html"><b>Contacto</b></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="principal">
+            <section></section>
+            <div class="columnas-contenido">
+                <div class="col-izq">
+                    <div class="img-container">
+                        <img id="user-icon" src="../img/user-icon.png" alt="Cambiar foto de perfil" />
+                        <input type="file" id="file-input" accept="image/*">
+                        <span></span>
+                    </div>
+                    <h2>Tu perfil</h2>
+                    <p>Argentina</p>
+                    <p>correousuario@mail.com</p>
+
+                    <ul class="about">
+                        <li><span>1766</span>Ranking 1v1</li>
+                        <li><span>1854</span>Ranking TG</li>
+                        <li><span>%58,7</span>Victorias</li>
+                    </ul>
+
+                    <div class="content">
+                        <p>
+                            Perfil de un jugador de Age of Empires II: Definitive Edition.
+                            Acá se muestran sus estadísticas y algunas fotos subidas por el
+                            jugador. El perfil es personalizable.
+                        </p>
+
+                        <ul>
+                            <li><i class="bi bi-steam"></i></li>
+                            <i class="fab fa-pinterest"></i>
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-dribbble"></i>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-der">
+                    <nav>
+                        <ul>
+                            <li><a href="">Partidas</a></li>
+                            <li><a href="">Galería</a></li>
+                            <li><a href="">Clan</a></li>
+                            <li><a href="">Estadísticas</a></li>
+                        </ul>
+                        <button>Agregar amigo</button>
+                    </nav>
+
+                    <div class="fotos">
+                        <img src="../img/usuario-1.jpg" alt="gameplay"/>
+                        <img src="../img/usuario-2.jpg" alt="gameplay"/>
+                        <img src="../img/usuario-3.jpg" alt="gameplay"/>
+                        <img src="../img/usuario-4.jpeg" alt="gameplay"/>
+                        <img src="../img/usuario-5.png" alt="gameplay"/>
+                        <img src="../img/usuario-6.jpg" alt="gameplay"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="usuario-ingresado.js"></script>
+</body>
+
+
+<footer>
+    <p>© 2024 - Trabajo final Programación Web I</p>
+</footer>
+
+</html>

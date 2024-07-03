@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    h1 , h2 {
+        text-align: center;
+    }
+
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #252a2f;
+    color: white;
+}
+
+.logo {
+    max-width: 5rem;
+    align-items: left;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.abrir-menu , .cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .abrir-menu , .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 2rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: white;
+    }
+
+    .cerrar-menu {
+        color: white;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #252a2f;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .4);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: white;
+    }
+
+    body {
+        form {
+            width: 100%;
+        }
+    }
+
+
+    .checkbox {
+        display: fixed;
+        align-items: left;
+        margin: 0 5px;
+    }
+
+    .recordar-contra {
+
+        margin-top: 15px;
+        }
+}
+
+
+
+footer{
+    background-color: #252a2f;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1.9);
+    color: white;
+}
+
+
+.formulario-usuario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../img/fondo\ usuario.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    color: #7a7a7a;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1.9);
+    border-radius: 15px;
+    background-color: white;
+}
+
+h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+label , p {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+input , .btn-1 {
+    padding: 17px 11px;
+    border: 1px solid #00adef;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    background-color: #fafafc;
+    outline: none;
+    color: #00adef;
+    font-size: 17px;
+}
+
+
+.btn-1 {
+    text-align: center;
+    text-decoration: none;
+    background-color: #00adef;
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.btn-1:hover {
+    background-color: #04b8fa;
+}
+
+.remember {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.checkbox {
+    display: fixed;
+    align-items: left;
+    margin: 0 5px;
+}
+
+.recordar-contra , .olvide-contra {
+    margin-top: 15px;
+}

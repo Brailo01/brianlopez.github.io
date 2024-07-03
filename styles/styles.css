@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    h1 , h2 {
+        text-align: center;
+    }
+
+    section{
+        margin: 30px
+    }
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #252a2f;
+}
+
+.logo {
+    max-width: 5rem;
+    align-items: left;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+}
+
+.abrir-menu , .cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .abrir-menu , .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 2rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: white;
+    }
+
+    .cerrar-menu {
+        color: white;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #252a2f;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .4);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: white;
+    }
+}
+
+
+
+footer{
+    background-color: #252a2f;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1.9);
+}
+
+.contenedor {
+    padding: 20px;
+}
+
+.principal {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.9);
+    border-radius: 50px 50px 0 0;
+    margin: 40px 40px 0 40px;
+    background-color: #4e5760;
+}
+
+.box , .bienvenida {
+    background: #40484f;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.bienvenida{
+    text-align: center;
+}
+
+.cronologia {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.cronologia-item {
+    flex: 1 1 calc(50% - 10px);
+    background: #40484f;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+.cronologia-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.background{
+    background-image: url(../img/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
